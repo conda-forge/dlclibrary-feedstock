@@ -21,7 +21,7 @@ requirements:
   run:
     - python >=3.7
     - huggingface_hub
-    - ruamel.yaml
+    - ruamel.yaml >=0.15.0
 
 test:
   imports:
