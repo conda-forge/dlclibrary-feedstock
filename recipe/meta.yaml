@@ -1,5 +1,5 @@
 {% set name = "dlclibrary" %}
-{% set version = "0.0.7" %}
+{% set version = "0.0.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 3a5ccf039639e4ccc7b40e1af26c89d55464718a60f1b92ddeccc39fa386e7b8
+  sha256: 9cecef889fd2b008b9e6e01cec338949e170cb15e2f6675478d4d0f6dd6d729c
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
