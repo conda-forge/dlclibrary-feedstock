@@ -1,12 +1,11 @@
-{% set name = "dlclibrary" %}
 {% set version = "0.0.10" %}
 
 package:
-  name: {{ name|lower }}
+  name: dlclibrary
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/d/dlclibrary/dlclibrary-{{ version }}.tar.gz
   sha256: 96a589f8bb79f499ecfd1156f751c693dd184e09c06afa69af31bb9c07900cf8
 
 build:
