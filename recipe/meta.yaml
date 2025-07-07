@@ -1,13 +1,12 @@
-{% set name = "dlclibrary" %}
-{% set version = "0.0.9" %}
+{% set version = "0.0.10" %}
 
 package:
-  name: {{ name|lower }}
+  name: dlclibrary
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 981b2c79a82e16e799b0a2c7c1cfd7574e0dbc23984fbb0398356a7c7189c7db
+  url: https://pypi.org/packages/source/d/dlclibrary/dlclibrary-{{ version }}.tar.gz
+  sha256: 96a589f8bb79f499ecfd1156f751c693dd184e09c06afa69af31bb9c07900cf8
 
 build:
   noarch: python
@@ -21,7 +20,7 @@ requirements:
     - setuptools
   run:
     - python >={{ python_min }}
-    - huggingface_hub
+    - huggingface_hub >=0.11.1
     - ruamel.yaml >=0.17.21
 
 test:
