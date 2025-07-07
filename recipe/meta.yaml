@@ -21,7 +21,7 @@ requirements:
     - setuptools
   run:
     - python >={{ python_min }}
-    - huggingface_hub
+    - huggingface_hub >=0.11.1
     - ruamel.yaml >=0.17.21
 
 test:
